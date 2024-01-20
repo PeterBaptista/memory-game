@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MenuBar } from "@/modules/home/app-layout";
 
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <MenuBar />
           {children}
         </ThemeProvider>
       </body>

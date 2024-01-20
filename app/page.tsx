@@ -5,7 +5,6 @@ import * as React from "react";
 import { Akshar } from "next/font/google";
 
 import { cn } from "@/lib/utils";
-import { NavigationMenuHome } from "@/modules/home/navigation-menu-home";
 
 const akshar = Akshar({
   weight: "400",
@@ -19,9 +18,7 @@ export default function Home() {
         <h1>Memory Game - by Pedrou</h1>
       </header>
       <div></div>
-      <div className="flex-1  flex-col flex items-center">
-        <NavigationMenuHome />
-      </div>
+      <div className="flex-1  flex-col flex items-center"></div>
     </main>
   );
 }
